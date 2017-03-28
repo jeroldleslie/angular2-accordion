@@ -1,4 +1,6 @@
-# AssignmentProject2
+# Angular2 Accordion
+
+Accordion using angular2,HTML5,Compass,Bootstrap
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.2.
 
