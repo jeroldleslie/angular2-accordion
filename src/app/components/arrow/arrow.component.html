@@ -1,0 +1,12 @@
+<div class="parent" fxLayout="column" fxLayoutAlign="start center" >
+  <!--svg arrow image -->
+  <img [src]="arrowSrc" [ngClass]="[rotation]">
+  <span>
+    <ng-content></ng-content>
+  </span>
+
+  <!--container to hold value of the arrow-->
+  <div class="innerDiv">
+    {{value}}%
+  </div>
+</div>

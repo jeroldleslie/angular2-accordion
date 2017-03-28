@@ -1,0 +1,54 @@
+//imports compass css framework
+@import '~compass-mixins/lib/compass';
+
+// Basic colors for different state of data. 
+// Also Background colors and border colors.
+$blue: #29b6f6; /* running state color */
+$red : #ff8a65; /* rejected state color */
+$green: #8bc34a; /* complete state color */
+$grey : #bdbdbd; /* pending state color */
+
+//Text colors
+$tblue: #0288d1; /* running state color */
+$tred : #ef5350; /* rejected state color */
+$tgreen: #558b2f; /* complete state color */
+$tgrey : #616161; /* pending state color */
+
+//mixin function to set style for accordion group
+//Parameteres: $color and $tcolor
+// $color: is for background and border
+// $tcolor: text color
+@mixin set-style($color,$tcolor) {
+    border: 1px solid $color; /* border style for the accorgion data element */
+
+    //gradient background for the accorgion data element
+    //using compass css framework
+    @include background-image(linear-gradient(to right, rgba($color,0.2),white,white));
+    margin: 5px; /* margin for the accorgion data element */
+    color:$tcolor; /* text color */
+    text-transform: capitalize; /* capitalize starting letter of each word */
+}
+
+//style on pending state
+//includes mixin for custom style
+.pending {
+  @include set-style($grey,$tgrey);
+}
+
+//style on rejected state
+//includes mixin for custom style
+.rejected {
+  @include set-style($red,$tred);
+}
+
+//style on running state
+//includes mixin for custom style
+.running {
+  @include set-style($blue,$tblue);
+}
+
+//style on complete state
+//includes mixin for custom style
+.complete {
+  @include set-style($green,$tgreen);
+}

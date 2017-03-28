@@ -1,0 +1,310 @@
+[
+    {
+        "build_id": "432461",
+        "owner": "sami",
+        "timestamp": "8/17/2016 12:05 AM",
+        "state": "running",
+        "type": "firewall",
+        "result": "none",
+        "result_detail": "none",
+        "metrics": {
+            "process_completed": 67,
+            "test": {
+                "value": 78,
+                "state": "raising"
+            },
+            "maintainability": {
+                "value": 45,
+                "state": "raising"
+            },
+            "security": {
+                "value": 29,
+                "state": "falling"
+            },
+            "workmanship": {
+                "value": 89,
+                "state": "raising"
+            }
+        },
+        "build": {
+            "process_completed": 76,
+            "timestamp": "8/17/2016 01:05 AM"
+        },
+        "unit_test": {
+            "process_completed": 60,
+            "pass": 150,
+            "failed": 55,
+            "code_covered": 78
+        },
+        "functional_test": {
+            "process_completed": 76,
+            "pass": 67,
+            "failed": 20,
+            "code_covered": 65
+        }
+    },
+    {
+        "build_id": "Tenrox-R1_4532",
+        "owner": "Rahul",
+        "timestamp": "9/17/2016 10:34 PM",
+        "state": "pending",
+        "type": "build",
+        "result": "none",
+        "result_detail": "none",
+        "metrics": {
+            "process_completed": 0,
+            "test": {
+                "value": 0,
+                "state": "falling"
+            },
+            "maintainability": {
+                "value": 0,
+                "state": "falling"
+            },
+            "security": {
+                "value": 0,
+                "state": "falling"
+            },
+            "workmanship": {
+                "value": 0,
+                "state": "falling"
+            }
+        },
+        "build": {
+            "process_completed": 0,
+            "timestamp": "8/17/2016 11:45 AM"
+        },
+        "unit_test": {
+            "process_completed": 0,
+            "pass": 0,
+            "failed": 0,
+            "code_covered": 0
+        },
+        "functional_test": {
+            "process_completed": 0,
+            "pass": 0,
+            "failed": 0,
+            "code_covered": 0
+        }
+    },
+    {
+        "build_id": "432567",
+        "owner": "Steve",
+        "timestamp": "8/17/2016 08:05 AM",
+        "state": "rejected",
+        "type": "firewall",
+        "result": "fail",
+        "result_detail": "Merge Failed",
+        "metrics": {
+            "process_completed": 45,
+            "test": {
+                "value": 12,
+                "state": "raising"
+            },
+            "maintainability": {
+                "value": 23,
+                "state": "raising"
+            },
+            "security": {
+                "value": 11,
+                "state": "raising"
+            },
+            "workmanship": {
+                "value": 16,
+                "state": "falling"
+            }
+        },
+        "build": {
+            "process_completed": 32,
+            "timestamp": "8/17/2016 11:45 AM"
+        },
+        "unit_test": {
+            "process_completed": 100,
+            "pass": 785,
+            "failed": 55,
+            "code_covered": 65
+        },
+        "functional_test": {
+            "process_completed": 0,
+            "pass": 345,
+            "failed": 123,
+            "code_covered": 65
+        }
+    },
+    {
+        "build_id": "Tenrox-R1_7623",
+        "owner": "Peter",
+        "timestamp": "9/17/2016 5:59 AM",
+        "state": "complete",
+        "type": "build",
+        "result": "pass",
+        "result_detail": "Complete",
+        "metrics": {
+            "process_completed": 100,
+            "test": {
+                "value": 100,
+                "state": "raising"
+            },
+            "maintainability": {
+                "value": 100,
+                "state": "raising"
+            },
+            "security": {
+                "value": 100,
+                "state": "raising"
+            },
+            "workmanship": {
+                "value": 100,
+                "state": "raising"
+            }
+        },
+        "build": {
+            "process_completed": 100,
+            "timestamp": "9/17/2016 6:50 AM"
+        },
+        "unit_test": {
+            "process_completed": 100,
+            "pass": 456,
+            "failed": 0,
+            "code_covered": 100
+        },
+        "functional_test": {
+            "process_completed": 100,
+            "pass": 231,
+            "failed": 0,
+            "code_covered": 100
+        }
+    },
+    {
+        "build_id": "432982",
+        "owner": "Johnson",
+        "timestamp": "9/17/2016 10:34 PM",
+        "state": "complete",
+        "type": "firewall",
+        "result": "pass",
+        "result_detail": "Auto Merge",
+        "metrics": {
+            "process_completed": 100,
+            "test": {
+                "value": 100,
+                "state": "raising"
+            },
+            "maintainability": {
+                "value": 100,
+                "state": "raising"
+            },
+            "security": {
+                "value": 100,
+                "state": "raising"
+            },
+            "workmanship": {
+                "value": 100,
+                "state": "raising"
+            }
+        },
+        "build": {
+            "process_completed": 100,
+            "timestamp": "8/17/2016 11:45 AM"
+        },
+        "unit_test": {
+            "process_completed": 100,
+            "pass": 978,
+            "failed": 0,
+            "code_covered": 99
+        },
+        "functional_test": {
+            "process_completed": 100,
+            "pass": 345,
+            "failed": 0,
+            "code_covered": 65
+        }
+    },
+    {
+        "build_id": "432877",
+        "owner": "Vincent",
+        "timestamp": "9/17/2016 8:34 AM",
+        "state": "pending",
+        "type": "firewall",
+        "result": "none",
+        "result_detail": "none",
+        "metrics": {
+            "process_completed": 0,
+            "test": {
+                "value": 0,
+                "state": "falling"
+            },
+            "maintainability": {
+                "value": 0,
+                "state": "falling"
+            },
+            "security": {
+                "value": 0,
+                "state": "falling"
+            },
+            "workmanship": {
+                "value": 0,
+                "state": "falling"
+            }
+        },
+        "build": {
+            "process_completed": 0,
+            "timestamp": "8/17/2016 11:45 AM"
+        },
+        "unit_test": {
+            "process_completed": 0,
+            "pass": 0,
+            "failed": 0,
+            "code_covered": 0
+        },
+        "functional_test": {
+            "process_completed": 0,
+            "pass": 0,
+            "failed": 0,
+            "code_covered": 0
+        }
+    },
+    {
+        "build_id": "Tenrox-R1_7623",
+        "owner": "Peter",
+        "timestamp": "8/17/2016 12:05 AM",
+        "state": "running",
+        "type": "build",
+        "result": "none",
+        "result_detail": "none",
+        "metrics": {
+            "process_completed": 78,
+            "test": {
+                "value": 65,
+                "state": "raising"
+            },
+            "maintainability": {
+                "value": 89,
+                "state": "raising"
+            },
+            "security": {
+                "value": 89,
+                "state": "raising"
+            },
+            "workmanship": {
+                "value": 12,
+                "state": "falling"
+            }
+        },
+        "build": {
+            "process_completed": 88,
+            "timestamp": "8/17/2016 01:05 AM"
+        },
+        "unit_test": {
+            "process_completed": 78,
+            "pass": 56,
+            "failed": 4,
+            "code_covered": 78
+        },
+        "functional_test": {
+            "process_completed": 76,
+            "pass": 34,
+            "failed": 12,
+            "code_covered": 98
+        }
+    }
+]

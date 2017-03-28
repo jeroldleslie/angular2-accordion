@@ -1,0 +1,14 @@
+<div fxFlex>
+  <accordion>
+    <accordion-group [data]="data" *ngFor="let data of datas">
+      <div fxLayout="row" fxLayoutAlign="space-around center">
+        <metrics [data]="data"></metrics>
+        <mBuild [data]="data"></mBuild>
+        <unit-test [data]="data"></unit-test>
+        <functional-test [data]="data"></functional-test>        
+        <result [data]="data"></result>
+      </div>
+    </accordion-group>
+  </accordion>
+</div>
+<div id="snackbar" [ngClass]="[toasterClass]">{{msg}}</div>

@@ -1,0 +1,73 @@
+//imports compass css framework
+@import '~compass-mixins/lib/compass';
+
+
+// This scss file contains styles for Arrow component
+
+// variable for arrow width
+$width:45px;
+// variable for arrow height
+$height:45px;
+
+// custom mixin to set common style in all direction
+@mixin common() {
+    width:$width;
+    height:$height;
+    margin: 8px;
+
+}
+
+// up direction style
+// includes compass css framwork style
+.up{
+    @include rotate(-90deg);
+    @include common();
+}
+
+// down direction style
+// includes compass css framwork style
+.down{
+    @include rotate(-270deg);
+    @include common();
+}
+
+// right direction style
+// includes compass css framwork style
+.right{
+    @include common();
+}
+
+// left direction style
+// includes compass css framwork style
+.left{
+    @include rotate(-180deg);
+    @include common();
+}
+
+
+// base conainer of the arrow
+.parent{
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    span{
+       color: #212121;
+       font-size: 11px;
+    }
+}
+
+// styles for inner div to hold ::-ms-value
+// maintains the value in center
+.innerDiv{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 23px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+}
+
+
+

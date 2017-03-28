@@ -1,0 +1,47 @@
+<content-box title="Metrics" [bClass]="data.state" (click)="smModal.show()">
+  <div class="arrowBox" fxLayout="column" fxLayoutAlign="space-around center" fxFlex>
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <arrow id="uuu" [state]="data.metrics.test.state" [value]="data.metrics.test.value" [rotation]="rotationTest">Test</arrow>
+      <arrow [state]="data.metrics.maintainability.state" [value]="data.metrics.maintainability.value" [rotation]="rotationMain">Maintainability</arrow>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <arrow [state]="data.metrics.security.state" [value]="data.metrics.security.value" [rotation]="rotationSec">Security</arrow>
+      <arrow id="testArr" [state]="data.metrics.workmanship.state" [value]="data.metrics.workmanship.value" [rotation]="rotationWork">Workmanship</arrow>
+    </div>
+  </div>
+</content-box>
+
+<!--dialog box for mor information-->
+<!--will be shown when this component clicked-->
+<div bsModal #smModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Metrics Details</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="smModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body-font">
+        <div fxLayout="column" fxLayoutAlign="start start">
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <div class="rightFont">Tests</div>
+            <div>: {{data.metrics.test.value}}%</div>
+          </div>
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <div class="rightFont">Maintainability</div>
+            <div>: {{data.metrics.maintainability.value}}%</div>
+          </div>
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <div class="rightFont">Security</div>
+            <div>: {{data.metrics.security.value}}%</div>
+          </div>
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <div class="rightFont">Workmanship</div>
+            <div>: {{data.metrics.workmanship.value}}%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

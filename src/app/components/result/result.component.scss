@@ -1,0 +1,40 @@
+$green: #7cb342;
+$red: #ef5350;
+$yellow: #ffb300;
+
+
+@mixin set-result-style($color) {
+    font-size: 32px;
+    color:$color;
+    text-transform: capitalize;
+}
+
+@mixin set-title-style($color) {
+    font-size: 12px;
+    color:$color;
+}
+
+.resultGreen{
+    @include set-result-style($green);
+}
+
+.titleGreen{
+    @include set-title-style($green);
+}
+
+
+.resultRed{
+    @include set-result-style($red);
+}
+
+.titleRed{
+    @include set-title-style($red);
+}
+
+.resultYellow{
+    @include set-result-style($yellow);
+}
+
+.titleYellow{
+    @include set-title-style($yellow);
+}

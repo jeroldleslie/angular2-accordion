@@ -1,0 +1,62 @@
+//imports compass css framework
+@import '~compass-mixins/lib/compass';
+
+// Basic text colors for different state of data. 
+$tblue: #0288d1; /* running state color */
+$tred : #ef5350; /* rejected state color */
+$tgreen: #558b2f; /* complete state color */
+$tgrey : #616161; /* pending state color */
+
+
+// style to set aps between each progress bars
+.progress-margin{
+    div{
+    margin: 2px;
+        div{
+            width: 50px;
+        }
+    }
+}
+
+// common font size
+.margin{
+    font-size: 12px;
+}
+
+// svg icon dimentions
+.svgIcon{
+    height: 50px;
+    width: 50px;
+}
+
+// custom mixin method
+// parameter: $tcolor
+// $tcolor - for text color
+@mixin set-style($tcolor) {
+    fill:$tcolor;
+}
+
+//style on pending state
+//includes mixin for custom style
+.pending {
+  @include set-style($tgrey);
+}
+
+//style on rejected state
+//includes mixin for custom style
+.rejected {
+  @include set-style($tred);
+}
+
+//style on running state
+//includes mixin for custom style
+.running {
+  @include set-style($tblue);
+}
+
+//style on complete state
+//includes mixin for custom style
+.complete {
+  @include set-style($tgreen);
+}
+

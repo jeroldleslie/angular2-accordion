@@ -1,0 +1,8 @@
+<div class="progress">
+  <div [ngClass]="[bgColor]" id='width-duration' [ngStyle]="{width: (value < 100 ? value : 100) + '%'}"
+    aria-valuemin="0" [attr.aria-valuenow]="value" [attr.aria-valuetext]="value.toFixed(0) + '%'" [attr.aria-valuemax]="100">
+  </div>
+  <div class="inner" fxLayout="column" fxLayoutAlign="center center">
+    <ng-content></ng-content>
+  </div>
+</div>

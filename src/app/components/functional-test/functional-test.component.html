@@ -1,0 +1,60 @@
+<content-box title="Functional Test" [bClass]="data.state" (click)="smModal.show()">
+  <div class="testDiv">
+    <div class=pie>
+      <pie-chart [pass]="data.functional_test.pass" [fail]="data.functional_test.failed"></pie-chart>
+    </div>
+    <div  fxLayout="column" fxLayoutAlign="center center"  class="percent">
+      <div>
+      <span class="percentText">{{getPassPercent()}}%</span>
+      </div>
+      <div>
+
+      <span class="percentContent">tests passed</span>
+      </div>
+    </div>
+    <div class="progDiv">
+      <progress-bar [bgColor]="data.state" [value]="data.functional_test.code_covered">
+        <div fxLayout="column" fxLayoutAlign="space-around center">
+          <span id="codecoveredd">{{data.functional_test.code_covered}}%</span>
+          <span class="content">code covered</span>
+        </div>
+      </progress-bar>
+    </div>
+  </div>
+</content-box>
+
+<!--dialog box for mor information-->
+<!--will be shown when this component clicked-->
+ <div bsModal #smModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Functional Test Details</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="smModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body-font">
+        <div fxLayout="column" fxLayoutAlign="start start">
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <div class="rightFont">Number of Tests</div>
+            <div>: {{data.functional_test.pass + data.functional_test.failed}}</div>
+          </div>
+          <div fxLayout="row" fxLayoutAlign="start center" >
+            <div class="rightFont">Number of tests passed</div>
+            <div>: {{data.functional_test.pass}}</div>
+          </div>
+          <div fxLayout="row" fxLayoutAlign="start center" >
+            <div class="rightFont">Number of tests failed</div>
+            <div>: {{data.functional_test.failed}}</div>
+          </div>
+          <div fxLayout="row" fxLayoutAlign="start center" >
+            <div class="rightFont">Code covered</div>
+            <div>: {{data.functional_test.code_covered}}%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

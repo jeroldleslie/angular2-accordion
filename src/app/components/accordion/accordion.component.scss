@@ -1,0 +1,15 @@
+//imports compass css framework
+@import '~compass-mixins/lib/compass';
+
+// styles for accordion compoenent
+#accordion {
+  margin: 0px; /* set margin 0px */
+  padding: 5px; /* padding 5px to keep gap between the borders */
+  background:#eeeeee; /* light greay background*/
+}
+
+//styles for accourdion headers
+#header{
+    height: 40px;
+    font-size: 14px;
+}

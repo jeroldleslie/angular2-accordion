@@ -1,0 +1,85 @@
+//imports compass css framework
+@import '~compass-mixins/lib/compass';
+
+// Basic colors for different state of data. 
+// Also Background colors and border colors.
+$blue: #29b6f6; /* running state color */
+$red : #ff8a65; /* rejected state color */
+$green: #8bc34a; /* complete state color */
+$grey : #bdbdbd; /* pending state color */
+
+//Text colors
+$tblue: #0288d1; /* running state color */
+$tred : #ef5350; /* rejected state color */
+$tgreen: #558b2f; /* complete state color */
+$tgrey : #616161; /* pending state color */
+
+//mixin function to set style for accordion group
+//Parameteres: $color and $tcolor
+// $color: is for background and border
+// $tcolor: text color
+@mixin set-style($color,$tcolor) {
+    border: 1px solid $color;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    // @include background-image(linear-gradient(to right, $bcolor, white));
+    @include box-sizing(border-box);
+    @include box-shadow(#616161 1px 1px 5px);
+    @include background-image(linear-gradient(120deg, rgba($color, 0.1), white,white));
+}
+
+//style on pending state
+//includes mixin for custom style
+.pending {
+  @include set-style($grey,$tgrey);
+}
+.pending:hover {
+    cursor: pointer;
+}
+.pending:active {
+     @include box-shadow(#616161 1px 1px 10px);
+}
+
+//style on rejected state
+//includes mixin for custom style
+.rejected {
+  @include set-style($red,$tred);
+}
+.rejected:hover {
+    cursor: pointer;
+}
+.rejected:active {
+     @include box-shadow(#616161 1px 1px 10px);
+}
+
+//style on running state
+//includes mixin for custom style
+.running {
+  @include set-style($blue,$tblue);
+}
+.running:hover {
+    cursor: pointer;
+}
+.running:active {
+     @include box-shadow(#616161 1px 1px 10px);
+}
+
+//style on complete state
+//includes mixin for custom style
+.complete {
+  @include set-style($green,$tgreen);
+}
+.complete:hover {
+    cursor: pointer;
+}
+.complete:active {
+     @include box-shadow(#616161 1px 1px 10px);
+}
+
+//content box title style
+.title{
+    font-size: 14px;
+    // font-weight: bold;
+}

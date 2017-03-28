@@ -1,0 +1,12 @@
+<div [ngClass]="[data.state]" state="running">
+  <!--container for accorgion group header, 
+  which holds the datas when accordion in contract state-->
+  <div (click)="toggleOpen($event)">
+    <accordion-group-header [data]="data" [isOpen]="isOpen"></accordion-group-header>
+  </div>
+  <!--container to hold accordion group data, 
+  in contract state by default, expand when accordion header of the current data is clicked-->
+  <div [hidden]="!isOpen" *ngIf="isOpen"  [@enterAnimation]="isOpen" id="body">
+    <ng-content></ng-content>
+  </div>
+</div>
